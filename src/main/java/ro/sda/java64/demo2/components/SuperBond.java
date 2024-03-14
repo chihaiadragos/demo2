@@ -1,0 +1,16 @@
+package ro.sda.java64.demo2.components;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.stereotype.Component;
+import org.w3c.dom.css.CSSMediaRule;
+@Component
+public class SuperBond implements CommandLineRunner {
+    @Autowired
+    private BondInterface bondInterface;
+
+    @Override
+    public void run(String... args) throws Exception {
+        System.out.println("SuperBond: " + bondInterface.getName());
+    }
+}
