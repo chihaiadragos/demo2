@@ -4,6 +4,12 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class ClassD {
-    private ClassC classC;
+    private  ClassC classC;
 
+    @Override
+    public String toString() {
+        return "ClassD{" +
+
+                '}';
+    }
 }

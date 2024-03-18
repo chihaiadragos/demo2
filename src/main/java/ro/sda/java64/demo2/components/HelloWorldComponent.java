@@ -1,8 +1,6 @@
 package ro.sda.java64.demo2.components;
-
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
-
 import java.util.Arrays;
 
 @Component

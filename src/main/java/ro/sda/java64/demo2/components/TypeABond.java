@@ -7,11 +7,11 @@ import org.springframework.stereotype.Component;
 @Primary
 public class TypeABond implements BondInterface{
     public TypeABond() {
-        System.out.println("Constructing " + this.getClass().getName());
+        System.out.println("Constructig " + this.getClass().getName() );
     }
 
     @Override
     public String getName() {
-        return null;
+        return this.getClass().getSimpleName();
     }
 }

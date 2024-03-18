@@ -5,18 +5,20 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class ClassA implements CommandLineRunner {
+
     private ClassB classB;
 
     public ClassA(ClassB classB) {
         this.classB = classB;
-        System.out.println("Consturiesc clasa A cu parametru");
+        System.out.println("Construiesc clasa A cu parametru");
     }
-    public ClassA(){
-        System.out.println("Consturiesc obiectul ClasaA");
-    }
+
+//    public ClassA() {
+//        System.out.println("Construiesc obiectul ClassA");
+//    }
 
     @Override
     public void run(String... args) throws Exception {
-
+        System.out.println("Sunt in run in ClassA");
     }
 }

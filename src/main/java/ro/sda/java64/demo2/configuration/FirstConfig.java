@@ -4,6 +4,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import ro.sda.java64.demo2.controller.ResponseObject;
 @Configuration
+
 public class FirstConfig {
 
     @Bean
