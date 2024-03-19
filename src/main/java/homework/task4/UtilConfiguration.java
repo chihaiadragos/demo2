@@ -2,18 +2,21 @@ package homework.task4;
 
 
 import org.springframework.context.annotation.Bean;
-import org.springframework.stereotype.Component;
-@Component
-//@Configuration???????
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
 public class UtilConfiguration  {
 
     /**
      * Create 3 beans in a class named UtilConfiguration:
      * <p>
      * -> a bean named dummyLogger which is an implementation of the DummyLogger class
-     * -> a bean named listUtility implementing the ListUtil class. Use the method name to establish the correct bean name.
-     * -> bean named stringUtility which is an implementation of the StringUtil class. The method creating this bean should be named stringUtil.
+     * -> a bean named listUtility implementing the ListUtil class.
+     * Use the method name to establish the correct bean name.
+     * -> bean named stringUtility which is an implementation of the StringUtil class.
+     * The method creating this bean should be named stringUtil.
      */
+    //definim creearea Bean-urilor???
     @Bean
     public DummyLogger4 dummyLogger4() {
         return new DummyLogger4();
@@ -28,7 +31,7 @@ public class UtilConfiguration  {
     public StringUtil stringUtil() {
         return new StringUtil();
     }
-//DEPENDENTA CIRCULARA :((( -> mutat in clasa Task4
+    //DEPENDENTA CIRCULARA :((( -> mutat in clasa Task4
     //beanurile nu pot fi injectate in clasele unde sunt definite
 
 }

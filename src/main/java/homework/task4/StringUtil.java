@@ -7,6 +7,6 @@ public class StringUtil {
     public String formSentence(final List<String> words) {
         return words.stream()
                 .collect(Collectors.joining(", ", "%", "%"));
-        //concatenat toate stringurile cu spatiu intre ele - delimiter, a pu
+        //concatenat toate stringurile cu spatiu intre ele - delimiter,
     }
 }

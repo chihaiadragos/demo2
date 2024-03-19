@@ -1,6 +1,5 @@
 package homework.task4;
 
-import org.springframework.stereotype.Component;
 
 import java.util.List;
 
